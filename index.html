@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CricBot — Your IPL Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">CricBot</div>
+    <p class="tagline">Your personal IPL & Cricket expert</p>
+  </header>
+
+  <!-- CHAT WINDOW -->
+  <main class="chat-container">
+
+    <!-- Empty State (shown when no messages yet) -->
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon">🏟️</div>
+      <h2>Ask me anything about Cricket!</h2>
+      <p>IPL stats, match rules, player records, team history...</p>
+      <div class="suggestion-chips">
+        <button class="chip" onclick="sendSuggestion(this)">Who has won most IPL titles?</button>
+        <button class="chip" onclick="sendSuggestion(this)">Explain the DLS method</button>
+        <button class="chip" onclick="sendSuggestion(this)">Who is the IPL's all-time top scorer?</button>
+        <button class="chip" onclick="sendSuggestion(this)">How does the IPL auction work?</button>
+      </div>
+    </div>
+
+    <!-- Messages Area -->
+    <div class="messages" id="messages"></div>
+
+  </main>
+
+  <!-- INPUT BAR -->
+  <footer class="input-bar">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Ask about IPL, players, rules..."
+      autocomplete="off"
+    />
+    <button id="sendBtn" onclick="sendMessage()">Send</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

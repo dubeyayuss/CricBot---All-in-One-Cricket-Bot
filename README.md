@@ -3,7 +3,7 @@
 A purpose-built chatbot for cricket fans. Ask anything about IPL,
 player stats, match rules, team history, and more.
 
-**Live Demo:** [your-vercel-link.vercel.app]
+**Live Demo:** https://cricbot.vercel.app/
 
 ## Why Cricket?
 Cricket isn't just a sport in India — it's culture. I wanted to build
